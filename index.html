@@ -5,28 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | FuncoShop</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
     <header> <!-- Inicio header -->
-        <nav>
-            <img src="multimedia/branding/logo_light_horizontal.svg" alt="logotipo de la marca FuncoShop">
-            <ul>
-                <li><a href="pages/shop.html">SHOP</a></li>
-                <li><a href="pages/contact.html">CONTACTO</a></li>
-                <li><a href="pages/login.html">LOGIN</a></li>
-                <li><a href="pages/cart.html"><img src="multimedia/icons/cart-icon.svg" alt="icono de carrito"></a></li>
+        <nav class="navbar container">
+            <picture class="navbar__logo">
+                <a href="./index.html">
+                    <img src="multimedia/branding/logo_light_horizontal.svg" alt="logotipo de la marca FuncoShop">
+                </a>
+            </picture>
+            <ul class="navbar__menu">
+                <li class="navbar__item with-submenu">
+                    <a href="pages/shop.html"  class="navbar__link with-icon">SHOP</a>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Funkos</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Remeras</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Llaveros</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navbar__item">
+                    <a href="pages/contact.html"class="navbar__link">CONTACTO</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="pages/login.html"class="navbar__link">LOGIN</a>
+                </li>
+                <li class="navbar__item">
+                    <!--<a href="pages/cart.html"class="navbar__cart"> -->
+                    <button id="carrito" style="background-color: rgba(240, 248, 255, 0);">
+                        <img src="multimedia/icons/cart-icon.svg" alt="icono de carrito">
+                    </button> 
+                    <!--</a>-->
+                </li>
             </ul>
         </nav>
     </header> <!-- Fin header -->
+    <section>
+       <article>
+           <h3 class="hero__title">Nuevos Ingresos</h3>
+           <p class="hero__text">Descubrí el proximo Funco Pop de tu colección</p>
+           <a class="her__link" chref="pages/shop.html">SHOP</a>
+       </article>
+    </section>
     <main> <!-- Inicio main -->
-         <section>
-            <article>
-                <h3>Nuevos Ingresos</h3>
-                <p>Descubrí el proximo Funco Pop de tu colección</p>
-                <a href="pages/shop.html"></a>
-            </article>
-         </section>
          <section>
             <article>
                 <h3>Star Wars & The Mandalorian</h3>
@@ -110,19 +136,23 @@
     </main> <!-- Fin main -->
     <footer> <!-- Inicio footer -->
         <section>
-            <nav>
+            <nav class="navbar container">
                 <ul>
                     <li><a href="pages/shop.html">SHOP</a></li>
                     <li><a href="pages/register.html">REGISTRARSE</a></li>
                     <li><a href="pages/login.html">LOGIN</a></li>
                     <li><a href="pages/contact.html">CONTACTO</a></li>
                 </ul>
-                <picture>
+                <picture class="navbar__logo__pie">
                     <img src="multimedia/branding/isotype.svg" alt="Isotipo de la marca FuncoShop">
                 </picture>
             </nav>
         </section>
         <p>All rights reserved 2023 - Funkoshop &copy;</p>
     </footer> <!-- Fin footer -->
+    <audio id="dejame" src="deja.mp3"></audio>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="prog.js"></script>
+
 </body>
 </html>
