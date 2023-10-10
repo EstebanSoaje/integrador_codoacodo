@@ -7,6 +7,7 @@
     --dark-solid: #000000;
     --light-font-solid: #FFFFFF;
     --bg-oscuro: #30343F;
+    --dark-bg-solid: #30343F;
 
     /* Typography*/
     --base-font: 'Inter', sans-serif;
@@ -252,7 +253,7 @@ footer{
     display: flex;
     flex-direction: column;
     gap: var(--spacing-36);
-    margin: var(--spacing-36) auto;
+    margin: var(--spacing-68) auto;
 }
 
 .slider__title{
@@ -327,6 +328,19 @@ footer{
     text-transform: uppercase; 
     font-weight: 700;
 }
+
+/*   FOOTER  */
+.footer{
+    background-color: var(--dark-bg-solid);
+    padding: var(--spacing-68);
+}
+
+.footer__copy{
+    margin-top: var(--spacing-36);
+    text-align: center;
+}
+
+/*  ANIMATIONS  */
 
 @keyframes fade {
     0% {
