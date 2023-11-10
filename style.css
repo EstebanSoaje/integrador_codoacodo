@@ -1,3 +1,10 @@
+/* EXTERNALS */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css');
+@import url('https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css');
+
+
 :root{
     --primary-solid: #FF3333;
     --secondary-solid: #1D84B5;
@@ -246,26 +253,35 @@ footer{
     background-color: var(--primary-900);
     transition: background .3s ease-in-out;
 }
+/* SLIDER */
 
-/*  SLIDER */
-
-.slider{
+.slider {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-36);
     margin: var(--spacing-68) auto;
 }
 
-.slider__title{
+.slider__title {
     font-family: var(--alternative-font);
     font-size: var(--font-display);
-    text-transform: uppercase;   
+    text-transform: uppercase;
 }
 
-.slider__items{
-    display: flex;
-    gap: var(--spacing-24);
+iconify-icon {
+    color: var(--dark-bg-solid);
+    font-size: var(--font-small);
+    font-weight: 700;
+}
 
+/* OVERRIDE */
+
+.glide__arrow--left {
+    left: 0;
+}
+
+.glide__arrow--right {
+    right: 0;
 }
 
 .card-item__tag{
