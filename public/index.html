@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | FuncoShop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" rel="stylesheet">
+
+
+</head>
+<body>
+    <header> <!-- Inicio header -->
+        <nav class="navbar container">
+            <picture class="navbar__logo">
+                <a href="./index.html">
+                    <img src="multimedia/branding/logo_light_horizontal.svg" alt="logotipo de la marca FuncoShop">
+                </a>
+            </picture>
+            <ul class="navbar__menu">
+                <li class="navbar__item with-submenu">
+                    <a href="pages/shop.html"  class="navbar__link with-icon">SHOP</a>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__link">Funkos</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__link">Remeras</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__link">Llaveros</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navbar__item">
+                    <a href="pages/contact.html"class="navbar__link">CONTACTO</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="pages/login.html"class="navbar__link">LOGIN</a>
+                </li>
+                <li class="navbar__item">
+
+                    <a href="pages/cart.html"class="navbar__cart">
+                        <i id="menu_desplegable" class="fa-solid fa-"></i>
+                        <img id="carrito" src="multimedia/icons/cart-icon.svg" alt="icono de carrito">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header> <!-- Fin header -->
+    <section class="hero">
+       <article class="hero__content container">
+           <h3 class="hero__title">Nuevos Ingresos</h3>
+           <p class="hero__text">Descubrí el proximo Funco Pop de tu colección</p>
+           <a class="hero__link" href="pages/shop.html">SHOP</a>
+       </article>
+    </section>
+    <main class="main-container"> <!-- Inicio main -->
+         <section class="collection container">
+            <article class="collection__content">
+                <h3 class="collection__title">Star Wars & The Mandalorian</h3>
+                <p class="collection__text">Disfruta de una saga que sigue agregando personajes a su colección.</p>
+                <a class="collection__link" href="pages/shop.html">VER COLECCIÓN</a>
+            </article>
+            <picture class="collection__cover">
+                <img src="multimedia/star-wars/baby-yoda-1.webp" alt="Figura coleccionable Funco baby yoda">
+            </picture>
+         </section>
+         <section class="collection container">
+            <article class="collection__content">
+                 <h3 class="collection__title">Pokemon Indigo</h3>
+                 <p class="collection__text">Atrapa todos los que puedas y disfruta de una colección llena de amigos.</p>
+                 <a class="collection__link" href="pages/shop.html">VER COLECCIÓN</a>
+            </article>
+            <picture class="collection__cover">
+                    <img src="multimedia/pokemon/vulpix-1.webp" alt="Figura coleccionable Funco vulpix">
+            </picture>
+         </section>
+         <section class="collection container">
+            <article class="collection__content">
+                <h3 class="collection__title">Harry Potter</h3>
+                <p class="collection__text">Revive los recuerdos de una saga llena de magia y encanto.</p>
+                <a class="collection__link" href="pages/shop.html">VER COLECCIÓN</a>
+            </article>
+            <picture class="collection__cover">
+                <img src="multimedia/harry-potter/snape-patronus-1.webp" alt="Figura coleccionable Funco snape">
+            </picture>
+         </section>
+         <section class="slider container">
+            <h2 class="slider__title">Últimos Lanzamientos</h2>
+            <ul class="slider__items">
+                <li class="slider__item">
+                    <article class="card-item">
+                        <a class="card-item__link" href="pages/shop.html">
+                        <picture class="card-item__cover">
+                            <span class="card-item__tag">Nuevo</span>
+                            <img class="card-item__img--front" src="multimedia/star-wars/trooper-1.webp" alt="figura coleccionable stormtrooper">
+                            <img class="card-item__img--back" src="multimedia/star-wars/trooper-box.webp" alt="figura coleccionable stormtrooper en caja">
+                        </picture>
+                            <div class="card-item__content">
+                                <p class="card-item__licence">Star Wars</p>
+                                <h4 class="card-item__name">STORMTROOPER LIGHTSABER</h4>
+                                <p class="card-item__price">$ 1799,99</p>
+                                <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                            </div>
+                        </a>
+                    </article>
+                </li>
+                <li class="slider__item">
+                    <article class="card-item">
+                        <a class="card-item__link" href="pages/shop.html">
+                        <picture class="card-item__cover">
+                            <span class="card-item__tag">Nuevo</span>
+                            <img class="card-item__img--front" src="multimedia/pokemon/pidgeotto-1.webp" alt="figura coleccionable Pidgeotto">
+                            <img class="card-item__img--back" src="multimedia/pokemon/pidgeotto-box.webp" alt="figura coleccionable Pidgeotto en caja">
+                        </picture>
+                            <div class="card-item__content">
+                                <p class="card-item__licence">Pokemon</p>
+                                <h4 class="card-item__name">Pidgeotto</h4>
+                                <p class="card-item__price">$ 1799,99</p>
+                                <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                            </div>
+                        </a>
+                    </article>
+                </li>
+                <li class="slider__item">
+                    <article class="card-item">
+                        <a class="card-item__link" href="pages/shop.html">
+                        <picture class="card-item__cover">
+                            <span class="card-item__tag">Nuevo</span>
+                            <img class="card-item__img--front" src="multimedia/harry-potter/luna-1.webp" alt="figura coleccionable luna">
+                            <img class="card-item__img--back" src="multimedia/harry-potter/luna-box.webp" alt="figura coleccionable luna caja">
+                        </picture>
+                            <div class="card-item__content">
+                                <p class="card-item__licence">Harry Potter</p>
+                                <h4 class="card-item__name">LUNA LOVEGOOD LION MASK</h4>
+                                <p class="card-item__price">$ 1799,99</p>
+                                <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                            </div>
+                        </a>
+                    </article>
+                </li>
+            </ul>
+         </section>
+    </main> <!-- Fin main -->
+    <footer class="footer"> <!-- Inicio footer -->
+        <nav class="navbar container">
+            <ul class="navbar__item" >
+                <li class="navbar__item" >
+                    <a class="navbar__link" href="pages/shop.html">SHOP</a>
+                </li>
+                <li class="navbar__item" >
+                    <a class="navbar__link" href="pages/register.html">REGISTRARSE</a>
+                </li>
+                <li class="navbar__item" >
+                    <a class="navbar__link" href="pages/login.html">LOGIN</a>
+                </li>
+                <li class="navbar__item" >
+                    <a class="navbar__link" href="pages/contact.html">CONTACTO</a>
+                </li>
+            </ul>
+            <picture class="navbar__logo__pie">
+                <img src="multimedia/branding/isotype.svg" alt="Isotipo de la marca FuncoShop">
+            </picture>
+        </nav>
+        <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+    </footer> <!-- Fin footer -->
+
+
+
+    <audio id="dejame" src="deja.mp3"></audio>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="prog.js"></script>
+
+</body>
+</html>
