@@ -1,13 +1,9 @@
-module.exports = {
+const shopControllers = {
     shop: (req, res) => res.send("Página de Shop"),
-    item: (req, res) => res.send("Item"),
-    item: (req, res) => res.send("Página Sobre Nosotros"),
-    faqs:  (req, res) => res.send("Página preguntas frecuentes")
+    itemID: (req, res) => res.send("Item por ID"),
+    itemADD: (req, res) => res.send("Agregar item actual"),
+    shopCartGet:  (req, res) => res.send("Route para traer carrito"),
+    shopCartPOST:  (req, res) => res.send("Route para post de carrito")
 }
 
-
-router.get('/shop', shopController.shop);
-router.get('/shop/item/:id', shopController.item);
-router.post('/shop/item/:id/add', shopController.item);
-router.get('/shop/cart', shopController.cart);
-router.post('/shop/cart', shopController.cart);
+module.exports = shopControllers;

@@ -1,6 +1,11 @@
 const express = require('express');
 const app = express();
+const methodOverride = require('method-override');
 const mainRoutes = require('./src/routes/mainRoutes.js');
+const adminRoutes = require('./src/routes/adminRoutes.js');
+const shopRoutes = require('./src/routes/shopRoutes.js');
+const authRoutes = require('./src/routes/authRoutes.js');
+
 
 /* Requerimos la dependencia*/
 require('dotenv').config();
@@ -10,12 +15,17 @@ const PORT = process.env.PORT;
 
 // --- Comunica el sitio con la carpeta public enviando todos los archivos estáticos ---
 app.use(express.static('public'));
+
 app.use('/', mainRoutes);
+app.use('/', shopRoutes);
+app.use('/', adminRoutes);
+app.use('/', authRoutes);
+
+
 
 app.use(express.urlencoded());
 app.use(express.json());
 
-const methodOverride = require('method-override');
 // Override para habilitar los métodos PUT y DELETE
 app.use(methodOverride('_method'));
 
