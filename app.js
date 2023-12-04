@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+
 const methodOverride = require('method-override');
 const mainRoutes = require('./src/routes/mainRoutes.js');
 const adminRoutes = require('./src/routes/adminRoutes.js');
