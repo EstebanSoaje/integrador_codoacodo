@@ -7,7 +7,7 @@ const shopRoutes = require('./src/routes/shopRoutes.js');
 const authRoutes = require('./src/routes/authRoutes.js');
 
 
-/* Requerimos la dependencia*/
+/* Requerimos la dependencia que toma las variables del archivo .env*/
 require('dotenv').config();
 /* Leemos la constante*/
 const PORT = process.env.PORT;
@@ -22,8 +22,9 @@ app.use('/', adminRoutes);
 app.use('/', authRoutes);
 
 
-
+// es un middleware que se utiliza para analizar los datos enviados en el cuerpo de una solicitud HTTP
 app.use(express.urlencoded());
+//analiza las solicitudes HTTP entrantes que contienen JSON en el cuerpo y las dispobiliza
 app.use(express.json());
 
 // Override para habilitar los métodos PUT y DELETE
