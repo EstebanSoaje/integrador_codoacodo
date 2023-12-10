@@ -1,0 +1,201 @@
+/*INICIO HERO*/
+
+.hero {
+    height: 80vh;
+    background-image: url(../../multimedia/funkos-banner.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    
+.hero__container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 5rem; }
+
+.hero__container__title {
+    color: var(--light-font-solid);
+    font-size: 3.8rem;
+    font-weight: bold;
+    margin-bottom: 0px; }
+    
+.hero__container__subtitle {
+    color: var(--light-font-solid);
+    font-size: 1.8rem;
+    margin-bottom: 40px; }
+    
+.hero__container .button-blanco {
+    width: 211px;
+    height: 47px;
+    font-family: "Inter", sans-serif;
+    font-size: 2rem;
+    border-radius: 50px;
+    border: var(--light-bg-solid); }
+    
+/*RESPONSIVES HOME*/
+  
+@media screen and (max-width: 450px) {
+    .hero__container__title {
+      font-size: 3rem; }
+    .hero__container__subtitle {
+      font-size: 1.5rem; }
+    .hero__container .button-blanco {
+      font-size: 1.7rem; }
+  }
+  
+/*FIN HERO*/
+
+/*INICIO HOME*/
+
+.home {
+    padding: 2rem 5rem; }
+
+.home-1, .home-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  
+.home__text__title .card-title {
+    font-size: 4.6rem; }
+    
+.home__text__subtitle .card-text {
+    font-size: 2.4rem; }
+  
+.home__text__line .red-line {
+    color: var(--primary-solid);
+    margin: 2rem 0rem;
+    border: var(--primary-solid) solid 1px; }
+  
+.home__text__buttom .button-black {
+    width: 29rem;
+    height: 6.5rem;
+    font-family: "Inter", sans-serif;
+    font-size: 2.4rem;
+    border-radius: 5rem;
+    background-color: #30343F;
+    color: white; }
+    
+.home__image {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+      
+.home__image img {
+    width: 100%; }
+/*FIN HOME*/
+
+/*INICIO NEWS*/
+.news {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 8rem; }
+        
+.news__articles__product__image {
+    display: flex;
+    position: relative;
+    justify-content: center; }
+          
+.news__articles__product__image__label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 3rem;
+    background-color: var(--primary-solid);
+    color: white;
+    position: absolute;
+    font-size: 1.4rem;
+    top: 0;
+    right: 0; }
+            
+.news__articles__product__image__label p {
+    margin: 0px; }
+
+.news__articles__product__image__photo img {
+    width: 350px; }
+
+.img--back {
+    display: none; }
+
+.news__articles__product__image__photo:hover .img--front{
+    display: none; }
+
+.news__articles__product__image__photo:hover .img--back{
+    display: block; }
+
+.news__articles__product__description__title {
+    font-family: "Inter", sans-serif;
+    font-size: 1.4rem; }
+
+.news__articles__product__description__subtitle {
+    font-family: "Inter", sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold; }
+        
+.news__articles__product__description__price {
+    font-family: "Inter", sans-serif;
+    font-size: 1.6rem; }
+
+.news__articles__product__description__dues {
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #1D84B5; }
+  
+/*RESPONSIVES HOME*/
+
+@media screen and (max-width: 992px) {
+    .home {
+        padding: 2rem 3.5rem; }
+
+    .home__text__title .card-title {
+        font-size: 3.8rem; }
+        
+    .home__text__subtitle .card-text {
+        font-size: 2rem; }
+      
+    .home__text__buttom .button-black {
+        width: 29rem;
+        height: 6.5rem;
+        font-size: 2rem;
+        border-radius: 5rem;}
+}
+
+@media screen and (max-width: 768px) {
+    .home-1 {
+        flex-direction: column; 
+        margin-top: 2.8rem;}
+
+    .home-2 {
+        flex-direction: column-reverse; 
+        margin-top: 2.8rem;}
+
+    .home__text__title .card-title {
+        font-size: 3.4rem; }
+
+    .home__text__subtitle .card-text {
+        font-size: 2rem; }
+
+    .home__text__buttom {
+        display: flex;
+        justify-content: center; }
+
+    .home__text__buttom .button-black {
+        width: 23rem;
+        height: 5rem;
+        font-size: 1.8rem; }
+
+    .home__image img {
+        width: 70%; }
+
+    .news {
+        padding: 2rem 4rem; }
+
+    .news__title .titulo {
+        font-size: 3.5rem; }
+}
+
+/*FIN HOME*/

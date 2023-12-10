@@ -1,0 +1,93 @@
+/*INICIO LOGIN*/
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100vh - 35vh - 12rem); }
+  
+.login h2 {
+    margin-top: 20px; }
+  
+.login__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto; }
+  
+.login__form__inputs {
+    width: 40rem; }
+  
+.login__form__inputs__email {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: "Inter", sans-serif;
+    font-size: 2rem; }
+  
+.login__form__inputs__email label {
+    margin-right: 2rem; 
+    margin-top: 1rem;}
+  
+.login__form__inputs__email input {
+    border: none;
+    border-bottom: 1px solid #FF3333; }
+  
+.login__form__inputs__password {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: "Inter", sans-serif;
+    font-size: 2rem; }
+  
+.login__form__inputs__password label {
+    margin-right: 2rem; 
+    margin-top: 1rem; }
+  
+.login__form__inputs__password input {
+    border: none;
+    border-bottom: 1.5px solid #FF3333; }
+  
+.login__form__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem; }
+  
+.login__form__buttons__record {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  
+.login__form__buttons__record p {
+    margin-bottom: 0;
+    font-size: 1.2rem; }
+    
+.login__form__buttons input {
+    margin-left: 1rem;
+    margin-right: 0.5rem; }
+  
+.login__form a {
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    font-weight: bold;
+    color: #1D84B5;
+    text-decoration: none; }
+  
+/*RESPONSIVE LOGIN*/
+
+@media screen and (max-width: 576px) {
+    .titulo {
+        font-size: 2.8rem; }
+    .login__form__inputs {
+        width: 30rem; }
+    .login__form__inputs label {
+        font-size: 1.5rem; }
+    .login__form__inputs input {
+        width: 20rem; }
+    .login__form__inputs__email, .login__form__inputs__password {
+        grid-template-columns: 1fr 2fr; }
+}
+
+/*FIN LOGIN*/
