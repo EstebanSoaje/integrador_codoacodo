@@ -1,0 +1,108 @@
+/*INICIO REGISTER*/
+
+.register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    padding: 1rem; }
+  
+.register h2 {
+    margin-top: 20px; }
+
+.register__form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto; }
+  
+.register__form__inputs {
+    width: 48rem; }
+  
+.register__form__inputs__nombre, .register__form__inputs__apellido, .register__form__inputs__email {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: "Inter", sans-serif;
+    font-size: 2rem; }
+  
+.register__form__inputs__nombre label {
+    margin-top: 1rem; }
+
+.register__form__inputs__apellido label {
+    margin-top: 1rem; }
+
+.register__form__inputs__email label { 
+    margin-top: 1rem; }
+  
+.register__form__inputs__nombre input {
+    border: none;
+    border-bottom: 1px solid #FF3333; }
+
+.register__form__inputs__apellido input {
+    border: none;
+    border-bottom: 1px solid #FF3333; }
+
+.register__form__inputs__email input {
+    border: none;
+    border-bottom: 1px solid #FF3333; }
+
+.register__form__inputs__password {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: "Inter", sans-serif;
+    font-size: 2rem; }
+  
+.register__form__inputs__password label {
+    margin-top: 1rem; }
+  
+.register__form__inputs__password input {
+    border: none;
+    border-bottom: 1.5px solid #FF3333; }
+  
+.register__form__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem; }
+  
+.register__form__buttons__record {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  
+.register__form__buttons__record p {
+    margin-bottom: 0;
+    font-size: 1.2rem; }
+    
+.register__form__buttons input {
+    margin-left: 1rem;
+    margin-right: 0.5rem; }
+  
+.register__form a {
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    font-weight: bold;
+    color: #1D84B5;
+    text-decoration: none; }
+  
+/*RESPONSIVE LOGIN*/
+
+@media screen and (max-width: 576px) {
+    .titulo {
+        font-size: 2.8rem; }
+    .descripcion {
+        font-size: 1.8rem; }
+    .register__form__inputs {
+        width: 30rem; }
+    .register__form__inputs label {
+        font-size: 1.5rem; }
+    .register__form__inputs input {
+        width: 20rem; }
+    .register__form__inputs__email, .register__form__inputs__password {
+        grid-template-columns: 1fr 2fr; }
+}
+
+/*FIN REGISTER*/

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Funkoshop</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body class="grid-fixed">
+
+    <!--Inicio Header-->
+    <nav class="menu">
+        <section class="menu__container">
+            <a href="../../index.html"><img class="img-logo" src="../../multimedia/branding/logo_light_horizontal.svg" alt="logo"></a>
+            <ul class="menu__links">
+                <li class="menu__item menu__item--show">
+                    <a href="#" class="menu__link" id="todos">SHOP <img src="../../multimedia/icons/arrow.svg" class="menu__arrow"></a>
+                    <ul class="menu__nesting">
+                        <li class="menu__inside">
+                            <a href="shop.html" id= "Funko" class="menu__link menu__link--inside">FUNKOS</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="shop.html" id= "Remera" class="menu__link menu__link--inside">REMERAS</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="shop.html" id= "Llavero" class="menu__link menu__link--inside">LLAVEROS</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__item">
+                    <a href="../admin/contact.html" class="menu__link">CONTACTO</a>
+                </li>
+                <li class="menu__item">
+                    <a href="../admin/login.html" class="menu__link">LOGIN</a>
+                </li>
+                <li class="menu__item">
+                    <a href="carrito.htmls" class="menu__link"><img src="../../multimedia/icons/cart-icon.svg" alt=""></a>
+                </li>
+            </ul>
+            <div class="menu__hamburguer">
+                <img src="../../multimedia/icons/icons8-menu.svg" class="menu__img">
+            </div>
+        </section>
+    </nav>    
+    <!--Fin Header-->
+
+
+
+
+    <main id="edit">
+        <h2 class="edit__title">EDITAR ITEM</h2>
+        <form class="edit__form" action="/admin/edit" method="POST" enctype="application/x-www-form-urlencoded">
+            <div class="form__flex">
+                <div class="form__box--flex">
+                    <label class="form__label" for="collection">Categoría:</label>
+                    <select class="form__select" name="collection" id="collection" required>
+                        <option value="" disabled selected hidden>Seleccionar</option>
+                        <option value="Figuras Coleccionables">Figuras Coleccionables</option>
+                        <option value="Llaveros">Llaveros</option>
+                        <option value="Remeras">Remeras</option>
+                    </select>
+                </div>
+                <div class="form__box--flex">
+                    <label class="form__label" for="collection">Licencia:</label>
+                    <select class="form__select" name="collection" id="collection" required>
+                        <option value="" disabled selected hidden>Seleccionar</option>
+                        <option value="starwars">Star Wars</option>
+                        <option value="pokemon">Pokemon</option>
+                        <option value="harrypotter">Harry Potter</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form__box--flex">
+                <label class="form__label" for="name">Nombre del producto:</label>
+                <input class="form__input" type="text" name="name" id="name" placeholder="Kakashi Hatake Shippuden Saga" required>
+            </div>
+            <div>
+                <textarea name="description" id="description" cols="30" rows="10" placeholder="Descripción del producto" required></textarea>
+            </div>
+            <div class="form__flex">
+                <div class="form__box--flex">
+                    <label class="form__label" for="sku">SKU:</label>
+                    <input class="form__input" type="text" name="sku" id="sku" placeholder="SSK111AB001" required>
+                </div>
+                <div class="form__box--flex">
+                    <label class="form__label" for="price">Precio:</label>
+                    <div class="form__input--wrapper"><span>$</span><input class="form__input" type="text" name="price" id="price" data-type="currency" placeholder="0.000,00"></div>
+                </div>
+                <div class="form__box--flex">
+                    <label class="form__label" for="stock">Stock:</label>
+                    <div class="form__input--wrapper"><input class="form__input" type="text" name="stock" id="stock" placeholder="0" required><span>unidades</span></div>
+                </div>
+            </div>
+            <div class="form__flex">
+                <div class="form__box--flex">
+                    <label class="form__label" for="discount">Descuento:</label>
+                    <div class="form__input--wrapper"><input class="form__input" type="text" name="discount" id="discount" placeholder="0" required><span>%</span></div>
+                </div>
+                <div class="form__box--flex">
+                    <label class="form__label" for="dues">Cuotas:</label>
+                    <select class="form__select" name="dues" id="dues">
+                        <option value="0">Sin cuotas</option>
+                        <option value="3">3 cuotas s/ interés</option>
+                        <option value="6">6 cuotas s/ interés</option>
+                        <option value="9">9 cuotas s/ interés</option>
+                        <option value="12">12 cuotas s/ interés</option>
+                        <option value="18">18 cuotas s/ interés</option>
+                        <option value="24">24 cuotas s/ interés</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form__box--flex">
+                <label class="form__label" for="images">Imagenes:</label>
+                <input type="file" name="images" id="img" multiple>
+            </div>
+            <div class="form__box--flex">
+                <div class="edit__img">
+                    <img src="../../multimedia/harry-potter/hermione-1.webp" alt="Figura Funko coleccionable de Hermione">
+                    <p class="edit__img-side">Frente</p>
+                </div>
+                <div class="edit__img">
+                    <img src="../../multimedia/harry-potter/hermione-box.webp" alt="Figura Funko coleccionable de Hermione en caja">
+                    <p class="edit__img-side">Dorso</p>
+                </div>
+            </div>
+            <div>
+                <input class="btn btn--primary btn--large" type="submit" value="Modificar Producto">
+                <input class="btn btn--primary btn--large" type="reset" value="Limpiar">
+            </div>
+        </form>
+    </main>
+
+    <!--Inicio Footer-->
+    <footer class="footer">
+        <div class="footer__top container">
+            <div class="footer__top__left">
+                <ul>
+                    <li><a href="../shop/shop.html">SHOP</a></li>
+                    <li><a href="register.html">REGISTRARSE</a></li>
+                    <li><a href="login.html">INGRESAR</a></li>
+                    <li><a href="contact.html">CONTACTO</a></li>
+                </ul>
+            </div>
+            <div class="footer__top__right"><a href="../../index.html"><img src="../../multimedia/branding/isotype.svg" alt="logo"></a></div>
+        </div>
+        <div class="footer__bottom container">
+            <p>All rights reserved 2023 - Funkoshop &copy;</p>
+        </div>
+    </footer>
+<!--Fin Footer-->
+
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+//aqui se pueden generar las peticiones http
+
+### pide la vista home
+GET http://localhost:4000/home
+
+### pide la vista contact
+GET http://localhost:4000/contact
+
+### pide la vista about
+GET http://localhost:4000/about
+
+### pide la vista faqs
+GET http://localhost:4000/faqs
+
+###Trae todos los funkos   OK
+GET http://localhost:4000/shop/items
+
+###Trae funko por ID
+GET http://localhost:4000/shop/item/:130

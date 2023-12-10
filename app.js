@@ -11,7 +11,7 @@ const authRoutes = require('./src/routes/authRoutes.js');
 /* Requerimos la dependencia que toma las variables del archivo .env*/
 require('dotenv').config();
 /* Leemos la constante*/
-const PORT = process.env.PORT;
+const PORT = process.env.PORT ?? 1234;
 
 
 // --- Comunica el sitio con la carpeta public enviando todos los archivos estáticos ---
@@ -31,7 +31,7 @@ app.use(express.json());
 // Override para habilitar los métodos PUT y DELETE
 app.use(methodOverride('_method'));
 
-// Middleware para manejar el error 404
+// para manejar el error 404
 app.use((req, res, next) => {
     res.status(404).send('Recurso no encontrado');
 });

@@ -1,0 +1,204 @@
+/*INICIO ITEMS*/
+.item {
+    display: flex;
+    padding: 3rem 1rem 1rem 1rem; }
+    
+.item__imagen {
+    padding-left: 4rem;
+    text-align: center; }
+      
+.item__imagen img {
+    width: 90%; }
+    
+.item__descripcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 4rem; }
+      
+.item__descripcion__title {
+    font-family: "Inter", sans-serif;
+    font-size: 1.6rem; }
+      
+.item__descripcion__subtitle {
+    font-family: "Inter", sans-serif;
+    font-size: 2.2rem;
+    font-weight: bold; }
+      
+.item__descripcion__description {
+    font-family: "Inter", sans-serif;
+    font-size: 1.6rem; }
+      
+.item__descripcion__price {
+    font-family: "Inter", sans-serif;
+    font-size: 2.4rem; }
+      
+.item__descripcion__selection {
+    display: flex; }
+        
+.item__descripcion__selection__cantidad {
+    display: flex;
+    align-items: center; }
+          
+.item__descripcion__selection__cantidad input {
+    width: 105px;
+    height: 35px;
+    font-family: "Inter", sans-serif;
+    font-size: 2rem;
+    color: #4f4f4f;
+    text-align: center; }
+        
+.item__descripcion__selection__cantidad__cambiar {
+    display: flex;
+    flex-direction: column; }
+          
+.item__descripcion__selection__cantidad__cambiar button {
+    width: 20px;
+    height: 20px;
+    font-size: 1.2rem;
+    margin: 1px 10px;
+    padding: 0px;
+    border: 1px solid #4f4f4f;
+    border-radius: 0px;
+    background-color: #4f4f4f;
+    color: white; }
+        
+.item__descripcion__selection__carrito {
+    display: flex;
+    align-items: center; }
+          
+.item__descripcion__selection__carrito button {
+    width: 150px;
+    height: 38px;
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #FF3333; }
+      
+.item__descripcion__pago {
+    display: flex;
+    margin: 15px 0px; }
+        
+.item__descripcion__pago p, .item__descripcion__pago a {
+    font-family: "Inter", sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #1D84B5; }
+
+/*RESPONSIVES ITEMS*/
+
+@media screen and (max-width: 676px) {
+    .item__imagen {
+        padding-left: 0; }
+    .item__descripcion__description {
+        font-size: 1.3rem; }
+    .item__descripcion__selection__cantidad input {
+        width: 95px;
+        height: 30px;
+        font-size: 1.7rem; }
+    .item__descripcion__selection__cantidad__cambiar button {
+        width: 15px;
+        height: 15px;
+        font-size: 1.1rem; }
+    .item__descripcion__selection__carrito button {
+        width: 120px;
+        height: 30px;
+        font-size: 1.2rem; }
+    .item__descripcion__pago p, .item__descripcion__pago a {
+        font-size: 1.2rem; }
+}
+
+@media screen and (max-width: 576px) {
+    .item {
+        flex-direction: column; }
+    .item__imagen img {
+        width: 60%; }
+    .item__descripcion {
+        padding: 0 2rem; }
+}
+
+/*FIN ITEMS*/  
+
+/*INICIO NEWS*/
+
+.news {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 8rem; }
+
+.news__title {
+    max-width: 1200px; }
+    
+.news__articles {
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    left: 0;
+    margin: 2rem 0px; 
+    height: 530px;  
+    position: relative;
+    overflow: scroll;
+    scroll-snap-type: x mandatory; }
+    
+.news__articles__product {
+    display: flex;
+    flex-direction: column;
+    width: 36rem;
+    padding: 1rem 3rem 2rem 3rem;
+    position: sticky;
+    scroll-snap-type: center; }
+        
+.news__articles__product__image {
+    display: flex;
+    position: relative;
+    justify-content: center; }
+          
+.news__articles__product__image__label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 3rem;
+    background-color: #FF3333;
+    color: white;
+    position: absolute;
+    font-size: 1.4rem;
+    top: 0;
+    right: 0; }
+            
+.news__articles__product__image__label p {
+    margin: 0px; }
+          
+.news__articles__product__image__photo img {
+    width: 350px; }
+        
+.news__articles__product__description__title {
+    font-family: "Inter", sans-serif;
+    font-size: 1.4rem; }
+
+.news__articles__product__description__subtitle {
+    font-family: "Inter", sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold; }
+        
+.news__articles__product__description__price {
+    font-family: "Inter", sans-serif;
+    font-size: 1.6rem; }
+
+.news__articles__product__description__dues {
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #1D84B5; }
+
+/*FIN NEWS*/
+
+/*RESPONSIVES*/
+
+@media screen and (max-width: 768px) {
+    .news {
+        padding: 2rem 4rem; }
+    .news__title .titulo {
+        font-size: 3.5rem; }
+}

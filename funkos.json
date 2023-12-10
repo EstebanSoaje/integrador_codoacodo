@@ -1,0 +1,98 @@
+[
+    {
+        "id": "128",
+        "descripcion": "Funko Pop Harry Potter - Harry Potter",
+        "categoria": "Harry Potter",
+        "precio": "1999",
+        "imgFirst": "https://example.com/images/harry-1.webp",
+        "imgBox": "https://example.com/images/harry-box.webp"
+    },
+    {
+        "id": "129",
+        "descripcion": "Funko Pop Harry Potter - Hermione Granger",
+        "categoria": "Harry Potter",
+        "precio": "1999",
+        "imgFirst": "https://example.com/images/hermione-1.webp",
+        "imgBox": "https://example.com/images/hermione-box.webp"
+    },
+    {
+        "id": "130",
+        "descripcion": "Funko Pop Harry Potter - Luna Lovegood",
+        "categoria": "Harry Potter",
+        "precio": "1999",
+        "imgFirst": "https://example.com/images/luna-1.webp",
+        "imgBox": "https://example.com/images/luna-box.webp"
+    },
+    {
+        "id": "131",
+        "descripcion": "Funko Pop Harry Potter - Severus Snape",
+        "categoria": "Harry Potter",
+        "precio": "1999",
+        "imgFirst": "https://example.com/images/snape-patronus-1.webp",
+        "imgBox": "https://example.com/images/snape-patronus-box.webp"
+    },
+    {
+        "id": "128",
+        "descripcion": "Funko Pop Pokémon - Pikachu",
+        "categoria": "Pokémon",
+        "precio": "1999",
+        "imgFirst": "https://example.com/images/pikachu-1.webp",
+        "imgBox": "https://example.com/images/pikachu-box.webp"
+    },
+    {
+        "id": "129",
+        "descripcion": "Funko Pop Pokémon - Charmander",
+        "categoria": "Pokémon",
+        "precio": "1999",
+        "imgFirst": "https://example.com/images/charmander-1.webp",
+        "imgBox": "https://example.com/images/charmander-box.webp"
+    },
+    {
+        "id": "130",
+        "descripcion": "Funko Pop Pokémon - Meowth",
+        "categoria": "Pokémon",
+        "precio": "1999",
+        "imgFirst": "https://example.com/images/meowth-1.webp",
+        "imgBox": "https://example.com/images/meowth-box.webp"
+    },
+    {
+        "id": "131",
+        "descripcion": "Funko Pop Pokémon - Squirtle",
+        "categoria": "Pokémon",
+        "precio": "1999",
+        "imgFirst": "https://example.com/images/squirtle-1.webp",
+        "imgBox": "https://example.com/images/squirtle-box.webp"
+    },
+    {
+        "id": "128",
+        "descripcion": "Muñeco Star Wars - Darth Vader",
+        "categoria": "Star Wars",
+        "precio": "1999",
+        "imgFirst": "https://example.com/images/darth-vader-1.webp",
+        "imgBox": "https://example.com/images/darth-vader-box.webp"
+    },
+    {
+        "id": "129",
+        "descripcion": "Muñeco Star Wars - Yoda",
+        "categoria": "Star Wars",
+        "precio": "1999",
+        "imgFirst": "https://example.com/images/yoda-1.webp",
+        "imgBox": "https://example.com/images/yoda-box.webp"
+    },
+    {
+        "id": "130",
+        "descripcion": "Muñeco Star Wars - Stormtrooper",
+        "categoria": "Star Wars",
+        "precio": "1999",
+        "imgFirst": "https://example.com/images/stormtrooper-1.webp",
+        "imgBox": "https://example.com/images/stormtrooper-box.webp"
+    },
+    {
+        "id": "131",
+        "descripcion": "Muñeco Star Wars - Luke Skywalker",
+        "categoria": "Star Wars",
+        "precio": "1999",
+        "imgFirst": "https://example.com/images/luke-skywalker-1.webp",
+        "imgBox": "https://example.com/images/luke-skywalker-box.webp"
+    }
+]
