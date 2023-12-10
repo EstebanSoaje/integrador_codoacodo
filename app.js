@@ -1,5 +1,25 @@
 const express = require('express');
 const app = express();
+
+<<<<<<< HEAD
+const port = 3000;
+app.get("/", (req, res) => {
+ res.send('Hola Mundo!');
+});
+
+app.get("/home", (req, res) => {
+    res.send('Home desde node!');
+   });
+
+app.listen(port, () => {
+ console.log(`Example app listening at http://localhost:${port}`);
+});
+
+
+// para iniciar se ingresa el comando npm install
+// para detener se utiliza ctrl + c proceso
+
+=======
 const methodOverride = require('method-override');
 const mainRoutes = require('./src/routes/mainRoutes.js');
 const adminRoutes = require('./src/routes/adminRoutes.js');
@@ -7,7 +27,7 @@ const shopRoutes = require('./src/routes/shopRoutes.js');
 const authRoutes = require('./src/routes/authRoutes.js');
 
 
-/* Requerimos la dependencia*/
+/* Requerimos la dependencia que toma las variables del archivo .env*/
 require('dotenv').config();
 /* Leemos la constante*/
 const PORT = process.env.PORT ?? 1234;
@@ -22,8 +42,9 @@ app.use('/', adminRoutes);
 app.use('/', authRoutes);
 
 
-
+// es un middleware que se utiliza para analizar los datos enviados en el cuerpo de una solicitud HTTP
 app.use(express.urlencoded());
+//analiza las solicitudes HTTP entrantes que contienen JSON en el cuerpo y las dispobiliza
 app.use(express.json());
 
 // Override para habilitar los métodos PUT y DELETE
@@ -36,3 +57,4 @@ app.use((req, res, next) => {
 
 
 app.listen(PORT, () => console.log(`Servidor coriendo en http://localhost:${PORT}`));
+>>>>>>> develop
