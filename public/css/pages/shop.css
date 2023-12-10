@@ -1,0 +1,201 @@
+/*SHOP*/
+
+.shop {
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+.shop-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    max-width: 1200px;
+}
+
+/*INICIO FILTER*/
+
+.filter__titulo {
+    margin: 3rem 3rem 1rem;
+    font-size: 16px;
+    text-align: right; }
+
+.filter {
+    width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin: 50px 10px 0px 10px; }
+    
+.filter__buscar {
+    display: flex;
+    flex-direction: column; }
+      
+.filter__buscar label {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    margin: 5px 0px; }
+      
+.filter__buscar input {
+    font-family: "Inter", sans-serif;
+    font-size: 12px; }
+    
+.filter__orden {
+    display: flex;
+    flex-direction: column; }
+      
+.filter__orden label {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    margin: 5px 0px; }
+      
+.filter__orden select {
+    height: 20px; }
+    
+.filter__orden select option {
+    font-family: "Inter", sans-serif;
+    font-size: 12px; }
+    
+.filter__precio {
+    display: flex;
+    flex-direction: column; }
+    
+.filter__precio label {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    margin: 5px 0px; }
+
+.filter__precio__limites {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+
+.filter__precio__limites input {
+    width: 60px;
+    height: 18px;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    text-align: center; }
+    
+.filter__filtro {
+    display: flex;
+    flex-direction: column; }
+
+.filter__filtro label {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    margin: 5px 0px; }
+  
+/*RESPOSIVES FILTER*/
+
+@media screen and (min-width: 768px) {
+    .filter__titulo {
+        display: none; }
+}
+
+@media screen and (max-width: 768px) {
+    .shop {
+        display: flex;
+        flex-direction: column; }
+    .shop-container {
+        display: flex;
+        flex-direction: column; }
+    .filter__titulo {
+        display: block; }
+    .filter {
+        display: none; }
+}
+
+/*FIN FILTER*/
+  
+
+/*INICIO ARTICLES*/
+
+.articles {
+    /* display: grid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    flex-wrap: wrap;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    margin: 50px 0px; 
+    gap: 5rem 1rem; }
+    
+.articles__product {
+    display: flex;
+    flex-direction: column;
+    width: 310px; }
+      
+.articles__product__image {
+    display: flex;
+    position: relative;
+    justify-content: center; }
+    
+.articles__product__image__label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    background-color: #FF3333;
+    color: white;
+    position: absolute;
+    font-size: 1.4rem;
+    top: 0;
+    right: 0; }
+          
+.articles__product__image__label p {
+    margin: 0px; }
+        
+.articles__product__image__photo img {
+    width: 350px; }
+      
+.img--back {
+    display: none; }
+    
+.articles__product__image__photo:hover .img--front{
+    display: none; }
+    
+.articles__product__image__photo:hover .img--back{
+    display: block; }
+    
+.articles__product__description__title {
+    font-family: "Inter", sans-serif;
+    font-size: 1.4rem; }
+      
+.articles__product__description__subtitle {
+    font-family: "Inter", sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold; }
+
+.articles__product__description__price {
+    font-family: "Inter", sans-serif;
+    font-size: 1.6rem; }
+
+.articles__product__description__dues {
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #1D84B5; }
+  
+.botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px; }
+
+.botones button {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    width: 44px;
+    height: 44px;
+    margin: 5px; }
+  
+/*RESPOSIVES BOTONES*/
+
+@media screen and (max-width: 768px) {
+    #btn-2 {
+        display: none; }
+}
+/*FIN ARTICLES*/  
