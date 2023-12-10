@@ -16,4 +16,7 @@ GET http://localhost:4000/faqs
 GET http://localhost:4000/shop/items
 
 ###Trae funko por ID
-GET http://localhost:4000/shop/item/:130
+GET http://localhost:4000/shop/items/130
+
+###ADD funko por ID
+GET http://localhost:4000/shop/itemADD
