@@ -1,0 +1,193 @@
+/*CARRITO DE COMPRAS*/
+
+.carrito h2 {
+  border-bottom: solid 5px #ff3333;
+  display: inline-block;
+  margin-top: 5rem;
+}
+
+.carrito__container__encabezado {
+  display: grid;
+  grid-template-columns: 4fr 2fr 3fr;
+  background-color: #fafaff;
+  padding: 16px 50px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  margin: 30px 0 32px 0;
+  gap: 30px;
+}
+
+.carrito__container__encabezado p {
+  font-family: var(--base-font);
+  font-size: var(--font-small);
+  font-weight: 700;
+}
+  
+.carrito__container__productos {
+  background-color: var(--light-bg-solid);
+  padding: 16px 30px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 4fr 2fr 3fr;
+  justify-content: space-between;
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  margin-bottom: 32px;
+  align-items: center; }
+
+.carrito__container__productos__item {
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+  max-width: 410px; }
+
+.carrito__container__productos__item img {
+  max-width: 118px;
+  margin-right: 18px; }
+
+.item-detalle {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-detalle-titulo {
+  font-family: var(--base-font);
+  font-weight: 700;
+  font-size: var(--font-large);
+  color: var(--dark-solid);
+  margin-bottom: 3px; }
+
+.item-detalle-licencia {
+  font-family: var(--base-font);
+  font-weight: 500;
+  font-size: var(--font-xsmall);
+  color: var(--dark-solid);
+  margin-bottom: 10px; }
+
+.item-detalle-precio {
+  font-family: var(--base-font);
+  font-weight: 400;
+  font-size: var(--font-xsmall);
+  color: var(--dark-solid);
+  margin-bottom: 10px; }
+
+.carrito__container__cantidad {
+  display: flex; 
+  align-items: center; 
+  max-width: 340px; }
+  
+.carrito__container__cantidad input {
+  font-family: var(--base-font);
+  font-weight: 700;
+  font-size: var(--font-medium);
+  border: solid 0.5px #c9c9c9;
+  background-color: var(--light-font-solid);
+  display: inline-block;
+  width: 80px;
+  height: 40px;
+  text-align: center;
+  margin-right: 6px; }
+
+.carrito__container__cantidad__controles {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  
+.carrito__container__cantidad__controles button {
+  background-color: #f24e1e;
+  color: var(--light-font-solid);
+  width: 18px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-medium);
+  border: none; }
+
+.controles {
+  margin-bottom: 4px; }
+  
+.carrito__container__precio {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  font-size: 3rem;
+  margin-right: 20px; 
+  max-width: 380px; }
+  
+.carrito__container__precio p {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24.2px;
+  color:#333333;
+  border: none;
+  text-align: center;
+  width: 130px; }
+  
+  /* RESUMEN */
+
+.resumen {
+  display: grid;
+  justify-items: end;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.resumen h2 {
+  border-bottom: solid 5px #ff3333;
+  display: inline-block;
+  margin-top: 5rem; }
+
+.resumen__container {
+  display: flex;
+  flex-direction: column;
+  width: 500px; 
+  background-color: var(--light-bg-solid);
+  padding: 16px 30px;   
+  justify-content: space-between;
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  margin-bottom: 32px;
+  align-items: center; }
+
+.resumen__container__elemento {
+  display: grid;
+  grid-template-columns: 3fr 1fr; }
+
+.elemento-texto {
+  font-weight: 600;
+  font-size: var(--font-small); }
+
+.elemento-texto-total {
+  font-weight: 700;
+  font-size: var(--font-large); }
+
+.elemento-cantidad {
+  text-align: right;
+  font-weight: 700;
+  font-size: var(--font-small);
+  color: #747474;
+  width: 150px; }
+
+.elemento-cantidad-total {
+  text-align: right;
+  font-weight: 700;
+  font-size: var(--font-large);
+  color: #747474;
+  width: 150px; }
+
+.red-line {
+  width: 450px;
+  color: var(--primary-solid);
+  margin: 2rem 0rem;
+  border: var(--primary-solid) solid 2px; }
+
+.resumen button {
+  width: 500px;
+  padding: 14px;
+  font-weight: 600;
+  font-size: var(--font-large); 
+  margin-bottom: 3rem; } 

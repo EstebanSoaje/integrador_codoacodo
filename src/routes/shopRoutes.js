@@ -1,19 +1,14 @@
 const express = require('express');
 const router = express.Router();
-const shopControllers = require('../controllers/shopController.js');
-
-const items = require('../../funkos.json')
+const {shop, item, addItem, cart, addToCart} = require('../controllers/shopController.js');
 
 /* SHOP ROUTES */
-router.get('/shop', shopControllers.shop);
-router.get('/shop/item/:id', shopControllers.itemID);
-router.post('/shop/item/:id/add', shopControllers.itemADD);
-router.get('/shop/cart', shopControllers.shopCartGet);
-router.post('/shop/cart', shopControllers.shopCartPOST);
+router.get('/', shop);
+router.get('/item/:id', item);
+router.post('/item/:id/add', addItem);
+router.get('/cart', cart);
+router.post('/cart', addToCart);
 
-//traer todos los funkos del json/db
-router.get('/shop/items', shopControllers.items)
-router.get('/shop/items/:id', shopControllers.itemID)
 
 module.exports = router;
 

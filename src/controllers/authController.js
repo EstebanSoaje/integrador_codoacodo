@@ -1,8 +1,10 @@
+const path = require('path');
+
 const authControllers = {
-    loginView: (req, res) => res.send("vista login"),
-    login: (req, res) => res.send("post para loguearse"),
-    registerView: (req, res) => res.send("vista para registrarse"),
-    register: (req, res) => res.send("post para registrarse"),
+    login: (req, res) => res.render(path.resolve(__dirname, '../views/auth/login.ejs')),
+    doLogin: (req, res) => res.send("la ruta que valida los datos del login"),
+    register: (req, res) => res.send("vista para registrarse"),
+    doRegister: (req, res) => res.send("es la ruta que crea un usuario"),
     logout: (req, res) => res.send("get cierre de sesion")
 }
 

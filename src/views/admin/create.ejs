@@ -4,13 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FunkoShop - CREATE</title>
-    <!--Referencias-->
+    <title>Home | Funkoshop</title>
     <link rel="stylesheet" href="../../css/style.css">
-    <!--Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <!--Icono-->
-    <link rel="shortcut icon" href="../../multimedia/branding/isotype.svg">
 </head>
 <body class="grid-fixed">
     <!--Inicio Header-->
@@ -19,27 +14,27 @@
             <a href="../../index.html"><img class="img-logo" src="../../multimedia/branding/logo_light_horizontal.svg" alt="logo"></a>
             <ul class="menu__links">
                 <li class="menu__item menu__item--show">
-                    <a href="../shop/shop.html" class="menu__link" id="todos">SHOP <img src="../../multimedia/icons/arrow.svg" class="menu__arrow"></a>
+                    <a href="#" class="menu__link" id="todos">SHOP <img src="../../multimedia/icons/arrow.svg" class="menu__arrow"></a>
                     <ul class="menu__nesting">
                         <li class="menu__inside">
-                            <a href="../shop/shop_funkos.html" id= "Funko" class="menu__link menu__link--inside">FUNKOS</a>
+                            <a href="shop.html" id= "Funko" class="menu__link menu__link--inside">FUNKOS</a>
                         </li>
                         <li class="menu__inside">
-                            <a href="../shop/shop_remeras.html" id= "Remera" class="menu__link menu__link--inside">REMERAS</a>
+                            <a href="shop.html" id= "Remera" class="menu__link menu__link--inside">REMERAS</a>
                         </li>
                         <li class="menu__inside">
-                            <a href="../shop/shop_llaveros.html" id= "Llavero" class="menu__link menu__link--inside">LLAVEROS</a>
+                            <a href="shop.html" id= "Llavero" class="menu__link menu__link--inside">LLAVEROS</a>
                         </li>
                     </ul>
                 </li>
                 <li class="menu__item">
-                    <a href="contact.html" class="menu__link">CONTACTO</a>
+                    <a href="../admin/contact.html" class="menu__link">CONTACTO</a>
                 </li>
                 <li class="menu__item">
-                    <a href="login.html" class="menu__link">LOGIN</a>
+                    <a href="../admin/login.html" class="menu__link">LOGIN</a>
                 </li>
                 <li class="menu__item">
-                    <a href="../shop/carrito.html" class="menu__link"><img src="../../multimedia/icons/cart-icon.svg" alt=""></a>
+                    <a href="carrito.htmls" class="menu__link"><img src="../../multimedia/icons/cart-icon.svg" alt=""></a>
                 </li>
             </ul>
             <div class="menu__hamburguer">
@@ -49,12 +44,11 @@
     </nav>    
     <!--Fin Header-->
     
-    <div class="create container">
-        <h2 class="titulo">CREAR NUEVO ITEM</h2>
+    <main id="create" class="container">
+        <h2 class="create__title">CREAR NUEVO ITEM</h2>
         <form class="create__form" action="/admin/create" method="POST" enctype="application/x-www-form-urlencoded">
-            
-            <div class="create__form__container">
-                <div class="form__desplegable">
+            <div class="form__flex">
+                <div class="form__box--flex">
                     <label class="form__label" for="collection">Categoría:</label>
                     <select class="form__select" name="collection" id="collection" required>
                         <option value="" disabled selected hidden>Seleccionar</option>
@@ -63,7 +57,7 @@
                         <option value="Remeras">Remeras</option>
                     </select>
                 </div>
-                <div class="form__desplegable">
+                <div class="form__box--flex">
                     <label class="form__label" for="collection">Licencia:</label>
                     <select class="form__select" name="collection" id="collection" required>
                         <option value="" disabled selected hidden>Seleccionar</option>
@@ -73,38 +67,33 @@
                     </select>
                 </div>
             </div>
-
-            <div class="create__form__container">
-                <div class="form__rellenable__big">
-                    <label class="form__label" for="name">Nombre del producto: </label>
-                    <input class="form__input" type="text" name="name" id="name" placeholder="Kakashi Hatake Shippuden Saga" required>   
-                </div>   
+            <div class="form__box--flex">
+                <label class="form__label" for="name">Nombre del producto:</label>
+                <input class="form__input" type="text" name="name" id="name" placeholder="Kakashi Hatake Shippuden Saga" required>
             </div>
-
-            <div class="create__form__textarea">
+            <div>
                 <textarea name="description" id="description" cols="30" rows="10" placeholder="Descripción del producto" required></textarea>
             </div>
-
-            <div class="create__form__container">
-                <div class="form__rellenable__small">
-                    <label class="form__label" for="sku">SKU: </label>
+            <div class="form__flex">
+                <div class="form__box--flex">
+                    <label class="form__label" for="sku">SKU:</label>
                     <input class="form__input" type="text" name="sku" id="sku" placeholder="SSK111AB001" required>
                 </div>
-                <div class="form__rellenable__small">
-                    <label class="form__label" for="price">Precio: </label>
+                <div class="form__box--flex">
+                    <label class="form__label" for="price">Precio:</label>
                     <div class="form__input--wrapper"><span>$</span><input class="form__input" type="text" name="price" id="price" data-type="currency" placeholder="0.000,00"></div>
                 </div>
-                <div class="form__rellenable__small">
-                    <label class="form__label" for="stock">Stock: </label>
-                    <div class="form__input--wrapper"><input class="form__input" type="text" name="stock" id="stock" placeholder="0" required><span>Unidades</span></div>
+                <div class="form__box--flex">
+                    <label class="form__label" for="stock">Stock:</label>
+                    <div class="form__input--wrapper"><input class="form__input" type="text" name="stock" id="stock" placeholder="0" required><span>unidades</span></div>
                 </div>
             </div>
-            <div class="create__form__container">
-                <div class="form__rellenable__small">
+            <div class="form__flex">
+                <div class="form__box--flex">
                     <label class="form__label" for="discount">Descuento:</label>
                     <div class="form__input--wrapper"><input class="form__input" type="text" name="discount" id="discount" placeholder="0" required><span>%</span></div>
                 </div>
-                <div class="form__desplegable">
+                <div class="form__box--flex">
                     <label class="form__label" for="dues">Cuotas:</label>
                     <select class="form__select" name="dues" id="dues">
                         <option value="0">Sin cuotas</option>
@@ -117,18 +106,16 @@
                     </select>
                 </div>
             </div>
-            <div class="create__form__container">
-                <div class="form__upload">
-                    <label class="form__label" for="images">Imagenes:</label>
-                    <input type="file" name="images" id="img" multiple>    
-                </div>
+            <div class="form__box--flex">
+                <label class="form__label" for="images">Imagenes:</label>
+                <input type="file" name="images" id="img" multiple>
             </div>
-            <div class="create__form__container">
-                <input class="boton-rojo" type="submit" value="Agregar Producto">
-                <input class="boton-rojo" type="reset" value="Limpiar">
+            <div class="form__flex">
+                <input class="form__btn btn btn--primary btn--large" type="submit" value="Agregar Producto">
+                <input class="form__btn btn btn--primary btn--large" type="reset" value="Limpiar">
             </div>
         </form>
-    </div>
+    </main>
 
      <!--Inicio Footer-->
     <footer class="footer">

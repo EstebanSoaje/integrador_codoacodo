@@ -12,6 +12,9 @@ GET http://localhost:4000/about
 ### pide la vista faqs
 GET http://localhost:4000/faqs
 
+### pide la vista shop
+GET http://localhost:4000/shop
+
 ###Trae todos los funkos   OK
 GET http://localhost:4000/shop/items
 
@@ -19,4 +22,6 @@ GET http://localhost:4000/shop/items
 GET http://localhost:4000/shop/items/130
 
 ###ADD funko por ID
-GET http://localhost:4000/shop/itemADD
+POST http://localhost:4000/shop/item/:id/add
+
+### GET todas las categorias BD MySQL

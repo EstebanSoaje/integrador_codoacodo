@@ -1,19 +1,11 @@
+const path = require('path');
 
-
-const items = require('../../funkos.json')
 const shopControllers = {
-    shop: (req, res) => res.send("Página de Shop"),
-    itemID: (req, res) => { //path-to-regexp
-        const {id} = req.params
-        const item = items.find(item => item.id === id)
-        if(item) return res.json(item)
-    
-        res.status(404).json({message: 'Item no encontrado'})
-    },
-    itemADD: (req, res) => res.send("Agregar item actual"),
-    shopCartGet:  (req, res) => res.send("Route para traer carrito"),
-    shopCartPOST:  (req, res) => res.send("Route para post de carrito"),
-    items: (req, res) => res.json(items)
+    shop: (req, res) => res.render(path.resolve(__dirname, '../views/shop/shop.ejs')),    
+    item: (req, res) => res.render(path.resolve(__dirname, '../views/shop/item.ejs')),
+    addItem: (req, res) => res.send("Agregar item actual"),
+    cart:  (req, res) => res.render(path.resolve(__dirname, '../views/shop/carrito.ejs')),
+    addToCart:  (req, res) => res.send("Route para post de carrito")
 }
 
 module.exports = shopControllers;

@@ -1,4 +1,4 @@
-const productosTodos = [
+const productosFunkos = [
     //STAR WARS
     {
         id: "funko-1-01",
@@ -44,42 +44,6 @@ const productosTodos = [
         imagen_front: "../../multimedia/star-wars/trooper-1.webp",
         imagen_back: "../../multimedia/star-wars/trooper-box.webp",
         precio: 1799.99
-    },
-    {
-        id: "remera-1-01",
-        titulo: "THE BOOK OF BOBA FETT",
-        categoria: "Remera",
-        licencia: "STAR WARS",
-        imagen_front: "../../multimedia/star-wars/re-grogu.png",
-        imagen_back: "../../multimedia/star-wars/re-grogu-box.png",
-        precio: 1799.99
-    },
-    {
-        id: "llavero-1-01",
-        titulo: "GROGU",
-        categoria: "Llavero",
-        licencia: "STAR WARS",
-        imagen_front: "../../multimedia/star-wars/ll-grogu-1.png",
-        imagen_back: "../../multimedia/star-wars/ll-grogu-box.png",
-        precio: 499.99
-    },
-    {
-        id: "llavero-1-02",
-        titulo: "BO-KATAN KRYZE",
-        categoria: "Llavero",
-        licencia: "STAR WARS",
-        imagen_front: "../../multimedia/star-wars/ll-kryze-1.png",
-        imagen_back: "../../multimedia/star-wars/ll-kryze-box.png",
-        precio: 499.99
-    },
-    {
-        id: "llavero-1-03",
-        titulo: "THE MANDALORIAN",
-        categoria: "Llavero",
-        licencia: "STAR WARS",
-        imagen_front: "../../multimedia/star-wars/ll-mandalorian-1.png",
-        imagen_back: "../../multimedia/star-wars/ll-mandalorian-box.png",
-        precio: 499.99
     },
 
     //POKEMON
@@ -175,33 +139,6 @@ const productosTodos = [
         imagen_back: "../../multimedia/harry-potter/snape-patronus-box.webp",
         precio: 1799.99
     },
-    {
-        id: "llavero-3-01",
-        titulo: "GINNY WEASLEY",
-        categoria: "Llavero",
-        licencia: "HARRY POTTER",
-        imagen_front: "../../multimedia/harry-potter/ll-ginny-1.png",
-        imagen_back: "../../multimedia/harry-potter/ll-ginny-box.png",
-        precio: 499.99
-    },
-    {
-        id: "llavero-3-02",
-        titulo: "REBEUS HAGRID",
-        categoria: "Llavero",
-        licencia: "HARRY POTTER",
-        imagen_front: "../../multimedia/harry-potter/ll-hagrid-1.png",
-        imagen_back: "../../multimedia/harry-potter/ll-hagrid-box.png",
-        precio: 499.99
-    },
-    {
-        id: "llavero-3-03",
-        titulo: "HARRY POTTER",
-        categoria: "Llavero",
-        licencia: "HARRY POTTER",
-        imagen_front: "../../multimedia/harry-potter/ll-harry-1.png",
-        imagen_back: "../../multimedia/harry-potter/ll-harry-box.png",
-        precio: 499.99
-    },
 
     //CIVIL WAR
     {
@@ -296,24 +233,6 @@ const productosTodos = [
         imagen_back: "../../multimedia/dragon-ball/burter-1.png",
         precio: 1799.99
     },
-    {
-        id: "remera-5-01",
-        titulo: "GOKU",
-        categoria: "Remera",
-        licencia: "DRAGON BALL Z",
-        imagen_front: "../../multimedia/dragon-ball/re-goku.png",
-        imagen_back: "../../multimedia/dragon-ball/re-goku-box.png",
-        precio: 1999.99
-    },
-    {
-        id: "remera-5-02",
-        titulo: "TRUNKS",
-        categoria: "Remera",
-        licencia: "DRAGON BALL Z",
-        imagen_front: "../../multimedia/dragon-ball/re-trunks.png",
-        imagen_back: "../../multimedia/dragon-ball/re-trunks-box.png",
-        precio: 1999.99
-    },
 
     //JURASSIC WORLD
     {
@@ -368,54 +287,42 @@ const btn2 = document.getElementById("btn-2");
 const btn3 = document.getElementById("btn-3");
 const btn4 = document.getElementById("btn-4");
 const btn5 = document.getElementById("btn-5");
-const btn6 = document.getElementById("btn-6");
-const btn7 = document.getElementById("btn-7");
 
 const card = document.querySelector('#articles');
 
 btn1.addEventListener("click", () => {
     currentPage = 1;
-    cargarProductosTodos();
+    cargarProductosFunkos();
 });
 
 btn2.addEventListener("click", () => {
     currentPage = 2;
-    cargarProductosTodos();
+    cargarProductosFunkos();
 });
 
 btn3.addEventListener("click", () => {
     currentPage = 3;
-    cargarProductosTodos();
+    cargarProductosFunkos();
 });
 
 btn4.addEventListener("click", () => {
     currentPage = 4;
-    cargarProductosTodos();
+    cargarProductosFunkos();
 });
 
 btn5.addEventListener("click", () => {
     currentPage = 5;
-    cargarProductosTodos();
-});
-
-btn6.addEventListener("click", () => {
-    currentPage = 6;
-    cargarProductosTodos();
-});
-
-btn7.addEventListener("click", () => {
-    currentPage = 7;
-    cargarProductosTodos();
+    cargarProductosFunkos();
 });
 
 let currentPage = 1;
 
-function cargarProductosTodos() {
+function cargarProductosFunkos() {
     card.innerHTML = "";
     const productosPerPage = 6; // Número de productos por página
     const startIndex = (currentPage - 1) * productosPerPage;
     const endIndex = startIndex + productosPerPage;
-    const productosToDisplay = productosTodos.slice(startIndex, endIndex);
+    const productosToDisplay = productosFunkos.slice(startIndex, endIndex);
 
     productosToDisplay.forEach(producto => {
         const div = document.createElement("div");
@@ -441,4 +348,4 @@ function cargarProductosTodos() {
     });
 };
 
-cargarProductosTodos();
+cargarProductosFunkos();
